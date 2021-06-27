@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   resources :products, only: [:index, :show]
   resources :categories, only: [:show, :index]
-
+  resources :about, only: [:index]
   resource :cart, only: [:show] do
     post   :add_item
     post   :remove_item
@@ -27,6 +27,7 @@ Rails.application.routes.draw do
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
+  
    get '/login' => 'sessions#new'
     post '/login' => 'sessions#create'
     get '/logout' => 'sessions#destroy'

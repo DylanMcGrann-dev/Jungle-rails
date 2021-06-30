@@ -16,7 +16,6 @@ RSpec.describe Product, type: :model do
       @product.errors.full_messages
     end
 
-
     it "should return an error if a price is not given" do
       @category = Category.new({name: 'shoes'})
       @product = Product.new(name:"dylan" ,quantity: 11, category: @category)

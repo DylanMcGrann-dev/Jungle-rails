@@ -85,7 +85,19 @@ RSpec.describe User, type: :model do
     end
     it "should return true when email and password match" do
       user = User.authenticate_with_credentials("x@y.com", "king123")
-      expect(user).to be_valid
+      p user
+      expect(user).to be_a User
     end
+
+    it "should return true even when email has capitals" do
+      user = User.authenticate_with_credentials("X@Y.com", "king123")
+      expect(user).to be_a User
+    end
+
+    it "should return true when theres is trailing and or leading white spaces" do
+      user = User.authenticate_with_credentials(" x@y.com ", "king123")
+      expect(user).to be_a User
+    end
+
   end
 end

@@ -16,7 +16,7 @@ RSpec.feature "Visitor navigates to home page", type: :feature, js: true do
   end
   scenario "can visit the detailspage by clicking on the product" do
     visit root_path
-    save_screenshot "test_one_root.png"
+    # save_screenshot "test_one_root.png"
     click_link 'Details', match: :first 
     save_screenshot "test_one_details.png"
     expect(page).to have_css('.product-detail', count: 1)

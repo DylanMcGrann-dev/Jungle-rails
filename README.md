@@ -33,3 +33,6 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 * Stripe
 
 ## Screen Shots
+!["home page"](https://github.com/DylanMcGrann-dev/Jungle-rails/blob/master/app/docs/Home_Page_screen_shot.png)
+!["Admin dashboard"](https://github.com/DylanMcGrann-dev/Jungle-rails/blob/master/app/docs/Admin_dashboard_screen_shot.png)
+!["Users cart"](https://github.com/DylanMcGrann-dev/Jungle-rails/blob/master/app/docs/my_cart_screen_shot.png)
